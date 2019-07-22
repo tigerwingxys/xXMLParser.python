@@ -88,7 +88,7 @@ class XXMLElement(object) :
 # match xml tag begin or end or nullTag
 catch_tag = r"(?<=<)\w+\b"
 catch_text = r"(?<=>).*(?=<)"
-catch_tag_end = r'(?<=</)\w+(?=[\s]*)'
+catch_tag_end = r'(?<=</)\w+(?=[\s]*>)'
 catch_tag_null = r"/>"
 # match key="value" attributes
 catch_attributes = r'\b\w+=[\'"].*?[\'"]|\w+=.+\b'
